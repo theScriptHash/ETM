@@ -3,11 +3,38 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { createBrowserRouter,RouterProvider } from 'react-router-dom';
+import ShowFootage from './SecondPageComponent/ShowFootage';
+import Incidents from './ThirdPageComponent/Incidents';
+import Error from './Error';
+import MainBody from './FirstPageComponent/MainBody';
+
+const AppRouter = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    errorElement : <Error/>,
+    children: [
+      {
+        path: "/",
+        element: <MainBody/>
+      },
+      {
+        path: "/showFootage",
+        element: <ShowFootage/>
+      },
+      {
+        path: "/incidents",
+        element: <Incidents/>
+      },
+    ],
+  },
+]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+      <RouterProvider router={AppRouter} />
   </React.StrictMode>
 );
 

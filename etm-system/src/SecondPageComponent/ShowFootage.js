@@ -2,6 +2,7 @@ import React from 'react'
 import EachFootage from './EachFootage'
 import Button from '../Button'
 import image from '../Media/traffic2.jpg'
+import { Link } from 'react-router-dom'
 
 export default function ShowFootage() {
   return (
@@ -14,7 +15,8 @@ export default function ShowFootage() {
       <EachFootage image = {image}/>
       <EachFootage image = {image}/>
       <EachFootage image = {image}/>
-      <Button content = "Check Incident"/>
+      <Link to="/incidents">  <Button content = "Check Incident"/> </Link>
+     
     </div>
   )
 }
