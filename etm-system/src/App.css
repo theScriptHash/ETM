@@ -1,0 +1,87 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  color: white;
+}
+
+h2{
+  font-size: 3rem;
+  background: #0210CF;
+background: linear-gradient(to right, #0210CF 0%, #CF0000 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+h3{
+  font-size: 1.5rem;
+}
+img{
+  width: 100%;
+  object-fit: contain;
+}
+.mainDiv{
+  background-color: rgb(233, 220, 247);
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* map div */
+.myLocation{
+  width: 60rem;
+  height: 30rem;
+  background-color: rgb(223, 206, 242);
+  margin: 2.5rem 0;
+  border: 2px solid white;
+  border-radius: 5px;
+background: #f8afe8;
+box-shadow:  20px 20px 60px #d395c5,
+             -20px -20px 60px #ffc9ff;
+}
+
+input{
+  font-size: 1.2rem ;
+  padding: 1rem;
+  background-color: rgb(199, 165, 246);
+  border: 2px solid white;
+  border-radius: 8px;
+  margin-top:2rem ;
+  
+}
+.btn{
+  background-color: rgb(51, 0, 74);
+  font-size: 1.5rem;
+  margin: 2rem 0;
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+}
+
+.mainDivSecondPage{
+  background-color: rgb(233, 220, 247);
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.eachFootage{
+  width: 20rem;
+  height: 20rem;
+  background-color: antiquewhite;
+}
+.incidentDetails{
+  width: 80%;
+  background-color: rgb(212, 187, 239);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+  margin: auto;
+  padding: 2rem;
+  border: 2px solid white;
+}
