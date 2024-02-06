@@ -3,8 +3,9 @@ import CurrLocation from './FirstPageComponent/CurrLocation'
 import Searchbar from './FirstPageComponent/Searchbar'
 import Button from './Button'
 import './App.css';
-import ShowFootage from './SecondPageComponent/ShowFootage';
+ import ShowFootage from './SecondPageComponent/ShowFootage';
 import Incidents from './ThirdPageComponent/Incidents';
+
 export default function App() {
   return (
     <> 

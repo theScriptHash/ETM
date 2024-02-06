@@ -7,10 +7,18 @@
 }
 
 h2{
-  font-size: 2.8rem;
+  font-size: 3rem;
+  background: #0210CF;
+background: linear-gradient(to right, #0210CF 0%, #CF0000 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 }
 h3{
   font-size: 1.5rem;
+}
+img{
+  width: 100%;
+  object-fit: contain;
 }
 .mainDiv{
   background-color: rgb(233, 220, 247);
@@ -25,9 +33,12 @@ h3{
   width: 60rem;
   height: 30rem;
   background-color: rgb(223, 206, 242);
-  margin: 2rem 0;
+  margin: 2.5rem 0;
   border: 2px solid white;
-  border-radius: 8px;
+  border-radius: 5px;
+background: #f8afe8;
+box-shadow:  20px 20px 60px #d395c5,
+             -20px -20px 60px #ffc9ff;
 }
 
 input{
